@@ -710,7 +710,7 @@ async function registerCommands() {
         console.log('🔄 Started refreshing application (/) commands...');
 
         await rest.put(
-            Routes.applicationCommands(process.env.CLIENT_ID || '1393280411278250144'),
+            Routes.applicationCommands(process.env.CLIENT_ID || '1408559977131671582'),
             { body: commands.map(cmd => cmd.toJSON()) }
         );
 
